@@ -1,9 +1,12 @@
 import Move.Move
+import Result.Result
 
-class Game(player1: () => Move, player2 : () => Move) {
+class Game(player1: (List[TurnResult]) => Move, player2 : (List[TurnResult]) => Move, rules : (Move, Move) => Result) {
 
   var scoreP1 : Int = 0;
   var scoreP2 : Int = 0;
+  private var turnHistory : List[TurnResult] = List()
+  private var player2History: List[TurnResult] = List()
 
   def StartGameLoop() = {
     var playing: Boolean = true
@@ -19,9 +22,9 @@ class Game(player1: () => Move, player2 : () => Move) {
     }
   }
 
+
   def PlayTurn(): TurnResult = {
-    val turn = new TurnResult(player1, player2)
-    println("\nPlayer One chose \"" + turn.getMovePlayer1() + "\" and player Two chose \"" + turn.getMovePlayer2() + "\".")
+    val turn = new TurnResult(player1(turnHistory), player2(player2History), rules)
     val result = turn.getResult()
     result match {
       case Result.PLAYER1_WON => {
@@ -39,30 +42,26 @@ class Game(player1: () => Move, player2 : () => Move) {
         println("Unknown result, try again.")
       }
     }
+
+    player2History = turn.invertResult()::player2History
+    turnHistory = turn :: turnHistory
     turn
   }
-
   def printScores() = {
     println("\nTotal scores:\n\nPlayer 1: "+ scoreP1 + "\nPlayer 2: " + scoreP2)
-  }
+    println("\n\nHistory:\n")
+    var i : Int = 0
+    var j : Int = 0
+    println("results in p1 perspective, p1 is here p1")
+    for(result <- turnHistory) {
+      i += 1
+      println("Result " + i + ": \nMove Player 1: " + result.getMovePlayer1() + "\nMove Player 2: " + result.getMovePlayer2() + "\n\n")
+    }
 
-
-  def consolePlayerMove() : Move = {
-    Move.stringToEnum(scala.io.StdIn.readLine("\nPlease enter a move " + ":\nOptions: Rock, Paper, Scissors\nMove: "))
-  }
-
-  def RockAIMove() : Move = {
-    Move.ROCK
-  }
-
-  def randomAIMove() : Move = {
-    val opponent = scala.util.Random.nextInt(3); //0=rock, 1=paper, 2=scissors
-    opponent match {
-      case 0 => Move.ROCK
-      case 1 => Move.PAPER
-      case 2 => Move.SCISSORS
-      case err => Move.UNKNOWN
+    println("results in p2 perspective, p1 is here p2")
+    for(result <- player2History) {
+      j += 1
+      println("Result " + i + ": \nMove Player 1: " + result.getMovePlayer1() + "\nMove Player 2: " + result.getMovePlayer2() + "\n\n")
     }
   }
-
 }

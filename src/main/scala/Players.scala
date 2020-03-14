@@ -1,28 +1,38 @@
 import Move.Move
 
-//this player can enter a move in the console
-object ConsolePlayer {
-    def getMove(): Move = {
+  //this player can enter a move in the console
+  object ConsolePlayer {
+    def getMove(history : List[TurnResult]): Move = {
       Move.stringToEnum(scala.io.StdIn.readLine("\nPlease enter a move:\nOptions: Rock, Paper, Scissors\nMove: "))
     };
-}
+  }
 
-//Random AI, this player returns a random move
-object RandomAI {
-  def getMove(): Move = {
-    val opponent = scala.util.Random.nextInt(3); //0=rock, 1=paper, 2=scissors
-    opponent match {
-      case 0 => Move.ROCK
-      case 1 => Move.PAPER
-      case 2 => Move.SCISSORS
-      case err => Move.UNKNOWN
+  //Random AI, this player returns a random move
+  object RandomAI {
+    def getMove(history : List[TurnResult]): Move = {
+      if(history == List()) {
+        Move.ROCK
+      } else if(history.head.getMovePlayer2() == Move.ROCK) {
+        Move.PAPER
+      } else if(history.head.getMovePlayer2() == Move.PAPER) {
+        Move.SCISSORS
+      } else if (history.head.getMovePlayer2() == Move.SCISSORS) {
+        Move.ROCK
+      } else {
+        history.head.getMovePlayer2()
+      }
     }
   }
-}
 
-//this player always plays rock..
-object RockAI {
-  def getMove(): Move = {
-    Move.ROCK
+  //this player always plays rock..
+  object RockAI {
+    def getMove(history : List[TurnResult]): Move = {
+      if(history == List()) {
+        Move.ROCK
+      } else {
+        history.head.getMovePlayer2()
+      }
+    }
   }
-}
+
+
