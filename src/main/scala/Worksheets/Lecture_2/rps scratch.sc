@@ -1,9 +1,43 @@
 import Move.Move
+import Result.Result
 
-class Game(player1: () => Move, player2 : () => Move) {
+class TurnResult(movePlayer1: () => Move, movePlayer2: () => Move) {
 
-  var scoreP1 : Int = 0;
-  var scoreP2 : Int = 0;
+  def getMovePlayer1(): () => Move = {
+    movePlayer1
+  }
+
+  def getMovePlayer2(): () => Move = {
+    movePlayer2
+  }
+
+  def getResult(): Result = {
+    movePlayer1 match {
+      case Move.ROCK => {
+        if (movePlayer2 == Move.ROCK) Result.TIE
+        else if (movePlayer2 == Move.PAPER) Result.PLAYER2_WON
+        else if (movePlayer2 == Move.SCISSORS) Result.PLAYER1_WON
+        else Result.UNKNOWN
+      }
+      case Move.PAPER => {
+        if (movePlayer2 == Move.ROCK) Result.PLAYER1_WON
+        else if (movePlayer2 == Move.PAPER) Result.TIE
+        else if (movePlayer2 == Move.SCISSORS) Result.PLAYER2_WON
+        else Result.UNKNOWN
+      }
+      case Move.SCISSORS => {
+        if (movePlayer2 == Move.ROCK) Result.PLAYER2_WON
+        else if (movePlayer2 == Move.PAPER) Result.PLAYER1_WON
+        else if (movePlayer2 == Move.SCISSORS) Result.TIE
+        else Result.UNKNOWN
+      }
+      case Move.UNKNOWN => Result.UNKNOWN
+    }
+  }
+
+}
+
+class Game(player1: () => Move, player2: () => Move) {
 
   def StartGameLoop() = {
     var playing: Boolean = true
@@ -12,7 +46,6 @@ class Game(player1: () => Move, player2 : () => Move) {
       scala.io.StdIn.readLine("\nEnter action (write help for options): \n").toLowerCase() match {
         case "new" => PlayTurn()
         case "exit" => playing = false
-        case "scores" => printScores()
         case "help" => println("Possible actions: New, Score, Exit, Help")
         case error => println("Action not recognized")
       }
@@ -20,17 +53,15 @@ class Game(player1: () => Move, player2 : () => Move) {
   }
 
   def PlayTurn(): TurnResult = {
-    val turn = new TurnResult(player1, player2)
+    val turn = new TurnResult(player1: () => Move, player2: () => Move)
     println("\nPlayer One chose \"" + turn.getMovePlayer1() + "\" and player Two chose \"" + turn.getMovePlayer2() + "\".")
     val result = turn.getResult()
     result match {
       case Result.PLAYER1_WON => {
-        scoreP1 += 1
-        println("Player 1 has won and was awarded a point.")
+        println("Player 1 has won and was awarded with a point.")
       }
       case Result.PLAYER2_WON => {
-        scoreP2 += 1
-        println("Player 2 has won and was awarded a point..")
+        println(" has won and was awarded with a point.")
       }
       case Result.TIE => {
         println("It's a tie!")
@@ -41,11 +72,6 @@ class Game(player1: () => Move, player2 : () => Move) {
     }
     turn
   }
-
-  def printScores() = {
-    println("\nTotal scores:\n\nPlayer 1: "+ scoreP1 + "\nPlayer 2: " + scoreP2)
-  }
-
 
   def consolePlayerMove() : Move = {
     Move.stringToEnum(scala.io.StdIn.readLine("\nPlease enter a move " + ":\nOptions: Rock, Paper, Scissors\nMove: "))

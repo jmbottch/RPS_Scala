@@ -1,8 +1,6 @@
 import Move.Move
 
-class RandomAI extends Player {
-  setName("Randy Om")
-
+case object RandomAI {
   def getMove(): Move = {
     val opponent = scala.util.Random.nextInt(3); //0=rock, 1=paper, 2=scissors
     opponent match {

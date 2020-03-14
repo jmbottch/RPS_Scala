@@ -1,8 +1,7 @@
 import Move.Move
 
-class ConsolePlayer(name: String) extends Player {
-    setName(name)
+case object ConsolePlayer {
     def getMove(): Move = {
-      Move.stringToEnum(scala.io.StdIn.readLine("\nPlease enter a move " + name + ":\nOptions: Rock, Paper, Scissors\nMove: "))
+      Move.stringToEnum(scala.io.StdIn.readLine("\nPlease enter a move:\nOptions: Rock, Paper, Scissors\nMove: "))
     };
 }
