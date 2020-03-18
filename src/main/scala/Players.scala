@@ -10,7 +10,7 @@ import Move.Move
   //Random AI, this player returns a random move
   object RandomAI {
     def getMove(history : List[TurnResult]): Move = {
-      if(history == List()) {
+      if(history.isEmpty) {
         Move.ROCK
       } else if(history.head.getMovePlayer2() == Move.ROCK) {
         Move.PAPER

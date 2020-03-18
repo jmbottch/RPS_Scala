@@ -36,3 +36,6 @@ println("Tien procent korting:" + calculatePrice(amountOfDrinks, pricePerDrink, 
 println("Tweede drankje gratis: " + calculatePrice(amountOfDrinks, pricePerDrink, secondFree))
 
 
+
+
+
