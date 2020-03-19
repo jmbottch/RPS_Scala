@@ -1,61 +1,35 @@
-import Move.Move
-import Result.Result
+package RockPaperScissors
+
+import RockPaperScissors.Move.Move
+import RockPaperScissors.Result.Result
 
 object Rules {
 
-  def getDefaultRules() : (Move, Move) => Result = {
-    defaultRules
-  }
-
-  def getTieToWin() : (Move, Move) => Result = {
-    tieToWin
-  }
-
-  private def defaultRules(moveP1 : Move, moveP2 : Move) : Result = {
-    moveP1 match {
-      case Move.ROCK => {
-        if (moveP2 == Move.ROCK) Result.TIE
-        else if (moveP2 == Move.PAPER) Result.PLAYER2_WON
-        else if (moveP2 == Move.SCISSORS) Result.PLAYER1_WON
-        else Result.UNKNOWN
+  def defaultRules(movePlayer1: Move, movePlayer2: Move): Result = {
+    val result = movePlayer1 match {
+      case RockPaperScissors.Move.ROCK => movePlayer2 match {
+        case RockPaperScissors.Move.ROCK => Result.TIE
+        case RockPaperScissors.Move.PAPER => Result.PLAYER2_WON
+        case RockPaperScissors.Move.SCISSORS => Result.PLAYER1_WON
       }
-      case Move.PAPER => {
-        if (moveP2 == Move.ROCK) Result.PLAYER1_WON
-        else if (moveP2 == Move.PAPER) Result.TIE
-        else if (moveP2 == Move.SCISSORS) Result.PLAYER2_WON
-        else Result.UNKNOWN
+      case RockPaperScissors.Move.PAPER => movePlayer2 match {
+        case RockPaperScissors.Move.ROCK => Result.PLAYER1_WON
+        case RockPaperScissors.Move.PAPER => Result.TIE
+        case RockPaperScissors.Move.SCISSORS => Result.PLAYER2_WON
       }
-      case Move.SCISSORS => {
-        if (moveP2 == Move.ROCK) Result.PLAYER2_WON
-        else if (moveP2 == Move.PAPER) Result.PLAYER1_WON
-        else if (moveP2 == Move.SCISSORS) Result.TIE
-        else Result.UNKNOWN
+      case RockPaperScissors.Move.SCISSORS => movePlayer2 match {
+        case RockPaperScissors.Move.ROCK => Result.PLAYER2_WON
+        case RockPaperScissors.Move.PAPER => Result.PLAYER1_WON
+        case RockPaperScissors.Move.SCISSORS => Result.TIE
       }
-      case Move.UNKNOWN => Result.UNKNOWN
     }
+    result
   }
 
-  private def tieToWin(moveP1 : Move, moveP2 : Move) : Result = {
-    moveP1 match {
-      case Move.ROCK => {
-        if (moveP2 == Move.ROCK) Result.PLAYER1_WON
-        else if (moveP2 == Move.PAPER) Result.PLAYER2_WON
-        else if (moveP2 == Move.SCISSORS) Result.PLAYER2_WON
-        else Result.UNKNOWN
-      }
-      case Move.PAPER => {
-        if (moveP2 == Move.ROCK) Result.PLAYER2_WON
-        else if (moveP2 == Move.PAPER) Result.PLAYER1_WON
-        else if (moveP2 == Move.SCISSORS) Result.PLAYER2_WON
-        else Result.UNKNOWN
-      }
-      case Move.SCISSORS => {
-        if (moveP2 == Move.ROCK) Result.PLAYER2_WON
-        else if (moveP2 == Move.PAPER) Result.PLAYER2_WON
-        else if (moveP2 == Move.SCISSORS) Result.PLAYER1_WON
-        else Result.UNKNOWN
-      }
-      case Move.UNKNOWN => Result.UNKNOWN
-    }
+  def predictMovePlayer2Rules(movePlayer1: Move, movePlayer2: Move): Result = {
+    if(movePlayer1 == movePlayer2)
+      Result.PLAYER1_WON
+    else
+      Result.PLAYER2_WON
   }
 }

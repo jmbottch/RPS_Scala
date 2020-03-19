@@ -1,23 +1,16 @@
-import Move.Move
-import Result.Result
+package RockPaperScissors
 
-class TurnResult(movePlayer1: Move, movePlayer2: Move, rules: (Move, Move) => Result) {
+import RockPaperScissors.Move.Move
+import RockPaperScissors.Result.Result
 
+class TurnResult(val movePlayer1: Move, val movePlayer2: Move, val result: Result){
+  def invert(): TurnResult = {
+    val invertedResult = result match {
+      case Result.PLAYER1_WON => Result.PLAYER2_WON
+      case Result.PLAYER2_WON => Result.PLAYER1_WON
+      case Result.TIE => Result.TIE
 
-  def getMovePlayer1(): Move = {
-    movePlayer1
+    }
+    new TurnResult(movePlayer2, movePlayer1, invertedResult)
   }
-
-  def getMovePlayer2(): Move = {
-    movePlayer2
-  }
-
-  def getResult(): Result = {
-    rules(movePlayer1, movePlayer2)
-  }
-
-  def invertResult(): TurnResult = {
-    new TurnResult(movePlayer2, movePlayer1, rules)
-  }
-
 }
