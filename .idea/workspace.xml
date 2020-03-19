@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81d6a4d1-4018-44a9-873a-2f5969442a8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Run.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Game.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Game.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Move.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Move.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Players.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Players.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Result.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Result.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Rules.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Rules.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/TurnResult.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/TurnResult.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/ConsolePlayer$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/ConsolePlayer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Game.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Move$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Move.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/RandomAI$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/RandomAI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Result$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/RockAI$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/RockAI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Rules$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Rules.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/TurnResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Run.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,22 +174,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="707" y="358" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584450316592" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1584643010899">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1584643299439">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584643010899" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1584643010899">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584643299439" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1584643299439">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584643010899" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1584643010898">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584643299439" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1584643299439">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584643010898" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1584643010899">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584643299439" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1584643299439">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584643010899" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584643299439" />
+    <state x="-1386" y="0" width="1402" height="715" maximized="true" key="dock-window-1" timestamp="1584643297792">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1386" y="0" width="1402" height="715" maximized="true" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584643297792" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1584221401150">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
