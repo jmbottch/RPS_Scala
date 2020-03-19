@@ -2,47 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81d6a4d1-4018-44a9-873a-2f5969442a8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_2/opdracht9_v2.sc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_3/opdracht1.sc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_3/opdracht2.sc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_3/opdracht3.sc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_3/opdracht4.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_4/Opdracht_1/opdracht2.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_4/Opdracht_1/opdracht3.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_4/Opdracht_1/opdracht4.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_4/opdracht2.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_4/opdracht3.sc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$4ea5e2c9db4a52723c46$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$4ea5e2c9db4a52723c46.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$4ea5e2c9db4a52723c46.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$99e30b854df46c9b0010$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$99e30b854df46c9b0010.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$99e30b854df46c9b0010.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$9a2afb34a73d15b91baa$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$9a2afb34a73d15b91baa.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$9a2afb34a73d15b91baa.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e7196270f2da71ec142b$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e7196270f2da71ec142b.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$e7196270f2da71ec142b.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/_global/csrLogger/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Players.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Players.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_2/opdracht3.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_2/opdracht3.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_2/opdracht8.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_2/opdracht8.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_2/opdracht9.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_2/opdracht9.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/RandomAI$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RandomAI$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Worksheets/Lecture_2/opdracht3.sc" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Worksheets/Lecture_2/opdracht3.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Worksheets/Lecture_2/opdracht8.sc" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Worksheets/Lecture_2/opdracht8.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Worksheets/Lecture_2/opdracht9.sc" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Worksheets/Lecture_2/opdracht9.sc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,12 +50,13 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\bottc\IdeaProjects\RockPaperScissors\src\main\scala\Worksheets\Lecture_2" />
-      <recent name="C:\Users\bottc\IdeaProjects\RockPaperScissors\src\main\scala\Worksheets\Practice" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\bottc\IdeaProjects\RockPaperScissors\src\main\scala\Worksheets\Lecture_1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bottc\IdeaProjects\RockPaperScissors\src\main\scala\Worksheets\Lecture_4" />
+      <recent name="C:\Users\bottc\IdeaProjects\RockPaperScissors\src\main\scala\Worksheets\Lecture_2" />
+      <recent name="C:\Users\bottc\IdeaProjects\RockPaperScissors\src\main\scala\Worksheets\Practice" />
     </key>
   </component>
   <component name="RunManager" selected="Scala REPL.Scala Console">
@@ -220,10 +186,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584221401150" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584225471000">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584640359487">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584225471000" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584640359487" />
   </component>
   <component name="WorksheetDefaultProjectSettings">
     <option name="compilerProfileName" value="Default" />
