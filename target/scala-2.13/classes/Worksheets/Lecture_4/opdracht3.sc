@@ -20,7 +20,8 @@ def divideNumByX(num: Either[Double, String], x : Double) : Either[Double, Strin
 def divide1ByX(num: Either[Double, String]) : Either[Double, String] = {
   num match {
     case Left(value) if value == 1 => Right("Error, the input is zero")
-    case Left(value) => Left(1/ (value-1))
+    case Left(value) => Left(1/ (value-1)) //output -0.75
+    //case Left(value) => Left(1/ value-1) //output 0.3333
     case Right(err) => Right(err)
   }
 }

@@ -1,13 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81d6a4d1-4018-44a9-873a-2f5969442a8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_4/Opdracht_1/opdracht2.sc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_4/Opdracht_1/opdracht3.sc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_4/Opdracht_1/opdracht4.sc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_4/opdracht2.sc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_4/opdracht3.sc" afterDir="false" />
+    <list default="true" id="684e9f32-a8b0-4a6f-8af9-03c3c73bec87" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/AI/CounterAI.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/AI/MirrorAI.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/AI/RandomAI.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/AI/RepeatSuccessAI.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/AI/RockAI.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ConsolePlayer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Run.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_3/opdracht5.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/AI/CounterAI$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/AI/CounterAI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/AI/MirrorAI$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/AI/MirrorAI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/AI/RandomAI$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/AI/RandomAI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/AI/RepeatSuccessAI$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/AI/RepeatSuccessAI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/AI/RockAI$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/AI/RockAI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/ConsolePlayer$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/ConsolePlayer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/Game.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/Move$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/Move.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/Result$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/Rules$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/Rules.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/Run$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/Run.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/scala-2.13/classes/RockPaperScissors/TurnResult.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$0cd400cd25a7b5b2a3be$.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$475a7a8f24ff99dc37d7$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$0cd400cd25a7b5b2a3be.cache" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$475a7a8f24ff99dc37d7.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$0cd400cd25a7b5b2a3be.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/config-classes/$475a7a8f24ff99dc37d7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Game.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Game.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Move.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Move.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Players.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Players.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Result.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Result.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Rules.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Rules.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/TurnResult.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/TurnResult.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/ConsolePlayer$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/ConsolePlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Move$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Move.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/RandomAI$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/RandomAI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Result$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/RockAI$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/RockAI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Rules$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Rules.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/TurnResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/Worksheets/Lecture_4/opdracht3.sc" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/Worksheets/Lecture_4/opdracht3.sc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +81,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Lecture_4" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
@@ -59,9 +115,9 @@
       <recent name="C:\Users\bottc\IdeaProjects\RockPaperScissors\src\main\scala\Worksheets\Practice" />
     </key>
   </component>
-  <component name="RunManager" selected="Scala REPL.Scala Console">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="RockPaperScissors.Run" />
       <module name="RockPaperScissors" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -94,9 +150,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Scala REPL.Scala Console" />
         <item itemvalue="Scala REPL.Unnamed" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -127,7 +183,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3167663076950" />
+        <entry key="$PROJECT_DIR$" value="3169288530696" />
         <entry key="$PROJECT_DIR$/build.sbt" value="289087967" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1244562550" />
       </map>
@@ -138,7 +194,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="81d6a4d1-4018-44a9-873a-2f5969442a8b" name="Default Changelist" comment="" />
+      <changelist id="684e9f32-a8b0-4a6f-8af9-03c3c73bec87" name="Default Changelist" comment="" />
       <created>1583831536335</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -154,10 +210,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1584226608980">
+    <state x="690" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1584642052777">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584226608980" />
+    <state x="690" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584642052777" />
+    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584642405036">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584642405036" />
+    <state x="689" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1584642402553">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584642402553" />
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584217842323">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -166,22 +230,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="707" y="358" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584450316592" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1584226659033">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1584805924809">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584226659033" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1584226659033">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584805924809" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1584805924809">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584226659033" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1584226659033">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584805924809" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1584805924809">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584226659033" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1584226659033">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584805924809" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1584805924809">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584226659033" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584805924809" />
+    <state x="-1386" y="0" width="1402" height="715" maximized="true" key="dock-window-1" timestamp="1584643297792">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1386" y="0" width="1402" height="715" maximized="true" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584643297792" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1584221401150">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
