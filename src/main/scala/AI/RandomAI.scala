@@ -6,9 +6,7 @@ import RockPaperScissors.{Move, TurnResult}
 object RandomAI {
   val rand = scala.util.Random
 
-  def getMove(turnHistory: List[TurnResult]): Move = {
-    val randomInt = rand.nextInt(3)
-
+  def getMove(turnHistory: List[TurnResult], randomInt : Int = rand.nextInt(3)): Move = {
     randomInt match {
       case 0 => Move.ROCK
       case 1 => Move.PAPER

@@ -27,9 +27,9 @@ object Rules {
   }
 
   def predictMovePlayer2Rules(movePlayer1: Move, movePlayer2: Move): Result = {
-    if(movePlayer1 == movePlayer2)
-      Result.PLAYER1_WON
-    else
-      Result.PLAYER2_WON
+    movePlayer1 match {
+      case move if move == movePlayer2 => Result.PLAYER1_WON
+      case _ => Result.PLAYER2_WON
+    }
   }
 }

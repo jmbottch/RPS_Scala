@@ -7,13 +7,10 @@ import RockPaperScissors.{Move, TurnResult}
 object MirrorAI {
 
   def getMove(turnHistory: List[TurnResult]): Move = {
-    if(!turnHistory.isEmpty){
-      val lastTurnResult :: _ = turnHistory
-      val lastEnemyMove = lastTurnResult.movePlayer2
 
-      lastEnemyMove
-    }else
-      RandomAI.getMove(turnHistory)
+    turnHistory match {
+      case Nil => RandomAI.getMove(turnHistory)
+      case head :: _ => head.movePlayer2
+    }
   }
-
 }

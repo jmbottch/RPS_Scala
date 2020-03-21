@@ -1,6 +1,6 @@
 package RockPaperScissors
 
-import RockPaperScissors.AI.{MirrorAI, RandomAI, RepeatSuccessAI}
+import RockPaperScissors.AI.{CounterAI, MirrorAI, RandomAI, RepeatSuccessAI}
 
 import scala.annotation.tailrec
 
@@ -8,7 +8,7 @@ object Run {
 
   def main(args: Array[String]): Unit = {
     val getMovePlayer1 = ConsolePlayer.getMove _
-    val getMovePlayer2 = RepeatSuccessAI.getMove _
+    val getMovePlayer2 = CounterAI.getMove _
     val rules = Rules.defaultRules _
     val game = new Game(getMovePlayer1, getMovePlayer2, rules)
 
@@ -25,9 +25,10 @@ object Run {
       println("Score: " + game.getScorePlayer1() + "-" + game.getScorePlayer2())
 
       println("Keep playing? Y/N")
-      val response = scala.io.StdIn.readLine().toUpperCase()
-      if (response == "Y")
-        gameLoop(game)
+      scala.io.StdIn.readLine().toUpperCase() match {
+        case input if input == "Y" => gameLoop(game)
+        case _ => println("Sorry?")
+      }
     }
   }
 }

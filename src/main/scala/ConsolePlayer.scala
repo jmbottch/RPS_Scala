@@ -3,19 +3,12 @@ import RockPaperScissors.Move.Move
 
 object ConsolePlayer {
 
-  def getMove(turnHistory: List[TurnResult]): Move = {
-    val validMove = false;
-
-    while(!validMove){
-
-      println("Your turn. Choose ROCK, PAPER or SCISSORS")
-      val input = scala.io.StdIn.readLine().toUpperCase()
-      input match {
-        case "ROCK" => return Move.ROCK
-        case "PAPER" => return Move.PAPER
-        case "SCISSORS" => return Move.SCISSORS
-      }
+  def getMove(turnHistory: List[TurnResult]): Option[Move]  = {
+    scala.io.StdIn.readLine().toUpperCase() match {
+      case "ROCK" =>Some(Move.ROCK)
+      case "PAPER" => Some(Move.PAPER)
+      case "SCISSORS" => Some(Move.SCISSORS)
+      case _ => None
     }
-    throw new IllegalStateException("Should not be able to exit the while loop")
   }
 }
