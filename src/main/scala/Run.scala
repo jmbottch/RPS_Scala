@@ -1,14 +1,39 @@
 package RockPaperScissors
 
-import RockPaperScissors.AI.{CounterAI, MirrorAI, RandomAI, RepeatSuccessAI}
+import AI.{CounterAI, MirrorAI, RandomAI, RepeatSuccessAI}
+import RockPaperScissors.Move.Move
 
 import scala.annotation.tailrec
 
 object Run {
 
   def main(args: Array[String]): Unit = {
-    val getMovePlayer1 = ConsolePlayer.getMove _
-    val getMovePlayer2 = CounterAI.getMove _
+
+    def createStaticAi(move: Move) : List[TurnResult] => Move = {
+      def getMove(history: List[TurnResult]) : Move = {
+        move
+      }
+      getMove
+
+    }
+
+    val movesList : List[Move] = List(Move.ROCK, Move.PAPER, Move.SCISSORS, Move.PAPER, Move.SCISSORS)
+    def scriptedAI(list : List[Move]) : List[TurnResult] => Move = {
+      var internalList = list
+      def getMove(moves : List[TurnResult]) : Move = {
+        internalList match {
+          case head::Nil => head
+          case head::tail => {
+            internalList = tail
+            head
+          }
+        }
+      }
+      getMove
+    }
+
+    val getMovePlayer1 = scriptedAI(movesList)
+    val getMovePlayer2 = createStaticAi(Move.ROCK)
     val rules = Rules.defaultRules _
     val game = new Game(getMovePlayer1, getMovePlayer2, rules)
 

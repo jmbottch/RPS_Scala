@@ -1,33 +1,36 @@
 import scala.language.postfixOps
-import scala.util.Try
 
-val hundredList = List(25,25,25,25)
-val hundredfourList = List(12,78,3,5,6)
-val minusHundredFourList = List(-12,-78,-3,-5,-6)
-val randomList = List(12,2,5,7,654,2,54,654897,5264,5468,3844,1651)
-val sevenList : List[Int] = List(3, 2, 5, 9, 7, 6, 2, 3)
-val emptyList : List[Int] = List(3)
-
-//i
-def sizeCalculator(list : List[Int]) : Int = {
-  list match {
-    case Nil => 0
-    case head::tail => 1+ sizeCalculator(tail)
-  }
-}
+val hundredList = List(25, 25, 25, 25)
+val hundredfourList = List(12, 78, 3, 5, 6)
+val minusHundredFourList = List(-12, -78, -3, -5, -6)
+val randomList = List(12, 2, 5, 7, 654, 2, 54, 654897, 5264, 5468, 3844, 1651)
+val sevenList: List[Int] = List(3, 2, 5, 9, 7, 6, 2, 3)
+val emptyList: List[Int] = List(3)
+// iv
+val stringToReplicate = "\nReplicate me"
 println(sizeCalculator(sevenList))
 
-//ii
-def sumCalculator(list : List[Int]) : Int = {
+//i
+def sizeCalculator(list: List[Int]): Int = {
   list match {
     case Nil => 0
-    case head::tail => head + sumCalculator(tail)
+    case head :: tail => 1 + sizeCalculator(tail)
+  }
+}
+println("the sum of " + hundredList + " = " + sumCalculator(hundredList))
+println("the sum of " + hundredfourList + " = " + sumCalculator(hundredfourList))
+
+//ii
+def sumCalculator(list: List[Int]): Int = {
+  list match {
+    case Nil => 0
+    case head :: tail => head + sumCalculator(tail)
   }
 
 }
-println("the sum of " + hundredList + " = "+ sumCalculator(hundredList))
-println("the sum of " + hundredfourList + " = "+ sumCalculator(hundredfourList))
 
+println(maxCalculator(randomList))
+println(maxCalculator(minusHundredFourList))
 
 //iii
 def maxCalculator(list: List[Int]): Int = {
@@ -39,18 +42,12 @@ def maxCalculator(list: List[Int]): Int = {
   }
 }
 
-println(maxCalculator(randomList))
-println(maxCalculator(minusHundredFourList))
-
-
-// iv
-val stringToReplicate = "\nReplicate me"
-
-def replicate(string : String, times : Int, listOfReplicatedStrings : List[String] = List()) : String = {
+def replicate(string: String, times: Int, listOfReplicatedStrings: List[String] = List()): String = {
   times match {
-    case times if times <= 0 => listOfReplicatedStrings.fold("")((x:String, y:String) => x + " " + y)
-    case _ => replicate(string, times -1, string::listOfReplicatedStrings)
+    case times if times <= 0 => listOfReplicatedStrings.fold("")((x: String, y: String) => x + " " + y)
+    case _ => replicate(string, times - 1, string :: listOfReplicatedStrings)
   }
 }
 
 replicate(stringToReplicate, 12)
+

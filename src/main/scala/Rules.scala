@@ -32,4 +32,5 @@ object Rules {
       case _ => Result.PLAYER2_WON
     }
   }
+
 }

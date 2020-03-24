@@ -1,11 +1,7 @@
-val x = 3
-val y = 2
-
-  def returnFunc(x: Int, y: Int) : Int = x + y
-
-def sum() : (Int, Int) => Int = {
+def sum(x : Int) : (Int) => Int  = {
+  def returnFunc(y: Int) : Int = x + y
   returnFunc
 }
 
-val result = sum()
-result(x,y)
+val result = sum(3)
+result(4)
