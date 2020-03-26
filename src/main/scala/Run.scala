@@ -1,6 +1,6 @@
 package RockPaperScissors
 
-import AI.{CounterAI, MirrorAI, RandomAI, RepeatSuccessAI}
+import AI.{CounterAI, MirrorAI, RandomAI, RepeatSuccessAI, RockAI}
 import RockPaperScissors.Move.Move
 
 import scala.annotation.tailrec

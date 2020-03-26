@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="684e9f32-a8b0-4a6f-8af9-03c3c73bec87" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_6/Lecture_Exercises.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_6/opdracht1.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_6/opdracht2.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_6/opdracht3.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_6/opdracht4/i.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_6/opdracht4/ii.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_6/opdracht4/iii.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_6/opdracht5/i.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_6/opdracht5/ii.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_6/opdracht5/iii.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_6/opdracht5/iv.sc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/Run.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Run.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_5/opdracht2.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Worksheets/Lecture_5/opdracht2.sc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Package Object" />
+        <option value="Scala Object" />
         <option value="Scala Worksheet" />
       </list>
     </option>
