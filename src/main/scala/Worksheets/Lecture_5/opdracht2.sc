@@ -22,9 +22,9 @@ log("third")
 //voorbeeld voor gebruik
 def makeNewObject(name : String) : Unit = {
   println("object created")
-  val log: String => Unit = makeLogger()
+//  val log: String => Unit = makeLogger()
   log(name + " was created")
 
 }
 
-//makeNewObject("User")
+makeNewObject("User")

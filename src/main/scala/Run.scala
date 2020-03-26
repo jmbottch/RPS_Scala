@@ -18,6 +18,7 @@ object Run {
     }
 
     val movesList : List[Move] = List(Move.ROCK, Move.PAPER, Move.SCISSORS, Move.PAPER, Move.SCISSORS)
+
     def scriptedAI(list : List[Move]) : List[TurnResult] => Move = {
       var internalList = list
       def getMove(moves : List[TurnResult]) : Move = {
